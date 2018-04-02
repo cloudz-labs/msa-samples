@@ -1,0 +1,50 @@
+.visual { text-align: center; margin:30px 0 90px 0; }
+.labs-header-intro h1 {font-size: 80px;font-weight: 700;margin: 0;margin:0 0 30px 0;color: rgba(255,255,255,0.7);line-height:90px;letter-spacing: 5px;}
+.labs-header-intro .header-message-container { padding: 10px 10px 20px; }
+.labs-header-intro .header-message { color: #fff; font-size: 28px;  line-height: 40px;  font-weight: 700; letter-spacing: 1px; }
+.labs-header-intro .header-message>p {margin:0;padding: 0;color: rgba(255,255,255,0.45);}
+.labs-header-intro .header-message .point-orange { color: #f1731f;}
+.labs-header-intro .header-message .point-text { /*color: #f1731f;*/ color: #D04D6F; font-weight: bold; }
+.header .btn {margin-top:20px;border-radius: 2px;border: 2px solid rgba(255,255,255,0.5);font-size: 16px;letter-spacing: 2px;font-weight: bold;padding:10px 40px;font-weight: normal;}
+.header .btn:hover { color: #fff; border:2px solid #fff;  }
+
+/* .labs-header-intro .header-message-container
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.labs-header-intro .header-message
+{
+	color: white;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+@media only screen and (max-width:960px) {
+	.labs-header-intro .header-message {
+		font-size: 28px;
+	}
+	.labs-header-intro .header-message-container .jump-to-courselist {
+		display: block;
+		margin: auto;
+	}
+}
+@media only screen and (max-width:460px) {
+	.labs-header-intro .header-message {
+		font-size: 20px;
+	}
+}
+
+.labs-header-intro .header-message > p:FIRST-CHILD
+{
+	margin-top: 0;
+}
+.labs-header-intro .header-message .point-orange {
+	color: #f1731f;
+}
+.labs-header-intro .header-message-container .jump-to-courselist {
+	font-size: 1em;
+} */

@@ -1,0 +1,19 @@
+logging:
+  level:
+    io.labs.data.mgmt: debug
+
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+  client:
+    registry-fetch-interval-seconds: 5
+
+services: 
+  mongodb: 
+    name: labs-mongo
+  objectstorage:
+    username: ${vcap.services.labs-object-storage.credentials.username}
+    password: ${vcap.services.labs-object-storage.credentials.password}
+    auth_url: ${vcap.services.labs-object-storage.credentials.auth_url}/tokens
+    tenantid: ${vcap.services.labs-object-storage.credentials.tenantId}
+    tenantname: ${vcap.services.labs-object-storage.credentials.tenantName}

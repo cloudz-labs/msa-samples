@@ -1,0 +1,98 @@
+.header.image-background {
+	position: relative;
+	max-height: 725px;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #D04D6F),
+		to(#413b54));
+	background-image: -webkit-linear-gradient(top, #D04D6F 20%, #413b54 100%);
+	background-image: -o-linear-gradient(top, #D04D6F 20%, #413b54 100%);
+	background-image: linear-gradient(-180deg, #D04D6F 20%, #413b54 100%);
+	width: 100%;
+	max-height: 580px;
+	overflow: hidden;
+	background-position: center;
+	background-color: #f5f5f5;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.visual-area .visual {
+	margin-top: 200px;
+}
+
+.header.image-background.hidden-treasure {
+	background-image: url('./img/hunkee.jpg');
+}
+
+.header.image-background .cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+.header.image-background .cover+div {
+	position: relative;
+	z-index: 1;
+}
+
+.header .nav-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: right;
+	padding: 15px 10px 15px 10px;
+	margin: 0;
+	border-bottom: 1px solid hsla(0, 0%, 90%, .2);
+}
+
+.header .nav-bar li {
+	display: inline;
+	margin-left: 0.7em;
+}
+
+.header .nav-bar a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.header .nav-bar a:hover {
+	-webkit-transition: color .4s;
+	-o-transition: color .4s;
+	transition: color .4s;
+	border-bottom: 2px solid #fff;
+}
+
+.header .nav h1 {
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+	position: absolute;
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	font-weight: 700;
+	margin: 12px 10px;
+	z-index: 10;
+}
+
+.sub .header.image-background {
+	position: relative;
+	max-height: 580px;
+	background-position: center;
+	background-color: #f5f5f5;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	background: #D04D6F;
+	height: 52px;
+}
+
+.sub .nav {
+	margin-bottom: 70px;
+}

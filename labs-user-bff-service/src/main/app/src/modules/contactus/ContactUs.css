@@ -1,0 +1,61 @@
+.contact-list
+{
+	text-align: center;
+}
+
+.contact-list, .contact-list li
+{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-list li
+{
+	display: inline-block;
+	width: 30%;
+	min-width: 300px;
+	padding: 50px;
+	margin: 15px 0;
+	box-sizing: border-box;
+	vertical-align: bottom;
+}
+
+.contact-profile
+{
+	margin: 0;
+	text-align: center;
+}
+
+.contact-profile
+{
+	width: 100%;
+}
+
+.contact-profile .contact-img-holder {
+	width:100%;
+	overflow: hidden;
+}
+.contact-profile img
+{
+	height: 180px;
+	width: auto;
+}
+
+.contact-profile dt
+{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.contact-profile dd
+{
+	margin: 0;
+}
+
+.contact-profile small
+{
+	color: #999;
+	font-size: 14px;
+	font-weight: normal;
+}

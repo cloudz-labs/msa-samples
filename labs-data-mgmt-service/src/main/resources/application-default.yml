@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: 
+      password: 
+      database: 
+eureka:
+  instance:
+    instance-id: localhost:${server.port}
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+  client:
+    region: default
+    fetch-registry: true
+    registry-fetch-interval-seconds: 5
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    
+file: 
+  save: 
+    dir: c:\\test

@@ -1,0 +1,7 @@
+# will be Kubernetes container port
+server:
+  port: 8031
+
+api:
+  connect:
+    path: http://labs1.cberry.xyz

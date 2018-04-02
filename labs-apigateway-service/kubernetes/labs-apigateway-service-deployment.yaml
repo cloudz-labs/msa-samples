@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    deployment: labs-apigateway-service
+  name: labs-apigateway-service-deployment
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        pod: labs-apigateway-service
+    spec:
+      containers:
+      - env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: k8s
+        image: labs/labs-apigateway-service
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "0.5"
+          requests:
+            cpu: "0.4"               
+        name: labs-apigateway-service-container
+        ports:
+        - containerPort: 9999
+      restartPolicy: Always
+status: {}

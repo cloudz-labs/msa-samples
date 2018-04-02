@@ -1,0 +1,9 @@
+info:
+  id: ${spring.application.name}
+
+server:
+  port: ${PORT:8989}
+
+turbine:
+  app-config: LABS-APIGATEWAY-SERVICE,LABS-REGISTRATION-SERVICE,LABS-MAIL-SERVICE,LABS-DATA-MGMT-SERVICE
+  cluster-name-expression: "'default'"    

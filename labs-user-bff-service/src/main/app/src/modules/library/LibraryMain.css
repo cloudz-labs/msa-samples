@@ -1,0 +1,62 @@
+.dt-library-main  h1 { font-size: 40px; }
+.dt-library-main  h2 { font-size: 28px; }
+.dt-library-main  h3 { font-size: 20px; }
+.dt-library-main  h4 { font-size: 18px; }
+
+.dt-library-main { background: rgba(71, 130, 211, 0.07); } 
+.dt-library-main .dt-library-category-list, .dt-library-main .dt-library-item-list { list-style: none; padding: 0 ;} 
+.dt-library-main .dt-library-item-list { padding-left:0; } 
+.dt-library-main .dt-library-item-list .dt-library-item-container { background-color: #fff; margin-top: 1em; margin-bottom: 1em; } 
+.dt-library-main h4 { font-size: 16px; }
+
+.dt-library-item { border: 1px solid #ddd; padding-bottom: .5em; } 
+.dt-library-item .dt-library-item-property { padding:0 20px; } 
+.dt-library-item .dt-library-item-downloads, .dt-library-item .dt-library-item-links { display: inline-block; } 
+.dt-library-item .dt-library-item-downloads .dt-library-item-property, .dt-library-item .dt-library-item-links .dt-library-item-property { padding: 0; } 
+
+.dt-library-item .dt-library-item-title { padding-top: 1em; padding-bottom: 1em; border-bottom: 1px solid #ddd; background-color: #fff; color:  #333; } 
+.dt-library-item .dt-library-item-title h3 { margin: 0; } 
+.dt-library-item .dt-library-item-description { white-space: pre-wrap; margin-top:20px; } 
+.dt-library-item .dt-library-item-property.dt-library-item-resources { display: inline-block; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; } 
+.dt-library-item .dt-library-item-property.dt-library-item-resources .dt-library-item-resources-container { 
+    background-color: #fff; display: inline-block; width: 100%; -webkit-box-sizing: border-box; box-sizing: border-box; padding:10px 0 0 0; border-radius: 3px; } 
+.dt-library-item .dt-library-item-property.dt-library-item-resources .dt-library-item-resources-container span { margin-left:5px; font-weight: bold; color: #666; }
+.dt-library-item .dt-library-item-property.dt-library-item-resources .dt-library-item-resources-container a 
+{ float: left; border:1px solid #ddd; border-radius: 4px; padding: 0 10px; margin:5px; padding:5px 10px; color: #666; font-weight: 400; }
+.dt-library-item .dt-library-item-property.dt-library-item-resources .dt-library-item-resources-container a:hover 
+{ border:1px solid #D04D6F; background-color: #D04D6F; color: #fff; }
+.dt-library-item-resources-container i { margin-right:10px; font-weight: 400;  }
+.dt-library-item .dt-library-item-property .file-icon { float: left; margin-left:10px; } 
+.dt-library-item .dt-library-item-property .file-icon:before { border-color: #f1f1f1 #f1f1f1 hsla(0,0%,100%,.35) hsla(0,0%,100%,.35); } 
+.dt-library-item .dt-library-item-property .file-icon[data-type=link] { background: #fff; border:1px solid #ddd; } 
+.dt-library-item .dt-library-item-property .file-icon[data-type=link]:before { border-color: #f1f1f1 #f1f1f1 hsla(0,0%,39%,.35) hsla(0,0%,39%,.35); } 
+.dt-library-item .dt-library-item-property .file-icon[data-type=link]:after { color: #0061be; } 
+.dt-library-item .dt-library-item-property .dt-library-item-download, .dt-library-item .dt-library-item-property .dt-library-item-link { 
+    color: #888; cursor: pointer; display: block; } 
+.dt-library-item .dt-library-item-property .dt-library-item-download:last-child, .dt-library-item .dt-library-item-property .dt-library-item-link:last-child { padding-bottom: 0; } 
+.dt-library-item .dt-library-item-property .dt-library-item-download span, .dt-library-item .dt-library-item-property .dt-library-item-link span { line-height: 32px; padding-left: .2em; } 
+.dt-library-item .dt-library-item-property .dt-library-item-download:hover, .dt-library-item .dt-library-item-property .dt-library-item-link:hover { color: #000; }
+
+
+/* .dt-library-main {
+	background-color: #eaedef;
+}
+.dt-library-main .dt-library-item-list,
+.dt-library-main .dt-library-category-list {
+	list-style: none;
+	padding: 0;
+}
+.dt-library-main .dt-library-item-list {
+	padding-left: 1em;
+}
+.dt-library-main .dt-library-category-list {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.dt-library-main .dt-library-category-list .dt-library-category-container {
+}
+.dt-library-main .dt-library-item-list .dt-library-item-container {
+	background-color: white;
+	margin-top: 1em;
+	margin-bottom:1em;
+} */

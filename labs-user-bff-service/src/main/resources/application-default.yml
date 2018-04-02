@@ -1,0 +1,3 @@
+api:
+  connect:
+    path: http://labs-apigateway-service.paas.sk.com

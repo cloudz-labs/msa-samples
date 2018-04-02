@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    service: labs-user-bff-service
+  name: labs-user-bff-service
+spec:
+  sessionAffinity: None
+  ports:
+  - name: "8031"
+    port: 8031
+    targetPort: 8031
+  selector:
+    pod: labs-user-bff-service
+  type: NodePort
+status:
+  loadBalancer: {}

@@ -1,0 +1,98 @@
+.register-form *{
+	box-sizing: border-box;
+}
+
+.register-form .register-form-notice {
+	display: block;
+	font-style: italic;
+	color: #666666;
+	border-left: 0.3em solid #999999;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+.register-form .register-questionnaire {
+	margin-top: 0.7em;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+	display: block;
+	
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.register-form .register-questionnaire .register-form-title-questionnaire {
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	margin: 0;
+}
+
+.register-form .register-questionnaire .register-question {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-bottom: 0.8em;
+	background-color: #ffffff;
+	border: 1px solid white;
+}
+.register-form .register-questionnaire .register-question:last-child {
+	margin-bottom: 0;
+}
+.register-form .register-questionnaire .register-question.required-unfilled {
+	border: 1px inset red;
+}
+
+.register-form .register-questionnaire .register-question .register-question-query {
+	display: block;
+	margin-bottom: 0.5em;
+}
+.register-form .register-questionnaire .register-question .register-question-text {
+	width:100%;
+	padding:0.5em;
+}
+.register-form .register-questionnaire .register-question .register-question-textarea {
+	width: 100%;
+	max-width: 100%;
+	padding: 0.5em;
+	height: 5em;
+} 
+.register-form .register-questionnaire .register-question .register-question-choice {
+	display: block;
+	padding-left: 1em;
+	line-height: 1.5em;
+}
+.register-form .register-questionnaire .register-question .register-question-choice-etc {
+	width: 10em;
+}
+
+.register-form .register-form-misc {
+	text-align: center;
+	padding: 1em;
+}
+.register-form .register-form-submit {
+	display: block;
+	cursor: pointer;
+	margin: auto;
+	border: 1px solid #777;
+	border-radius: 4px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #666;
+	padding: 5px 50px;
+	margin-bottom: 1em;
+	font-size: 16px;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+.register-form .register-form-submit:hover {
+	background: #666;
+	border: 1px solid #ccc;
+	color: #fff;
+}

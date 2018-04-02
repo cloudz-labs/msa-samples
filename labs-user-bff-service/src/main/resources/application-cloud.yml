@@ -1,0 +1,3 @@
+api:
+  connect:
+    path: ${vcap.services.labs-apigateway-service.credentials.uri}

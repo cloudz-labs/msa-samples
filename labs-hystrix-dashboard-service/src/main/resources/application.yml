@@ -1,0 +1,6 @@
+info:
+  id: ${spring.application.name}
+
+server:
+  port: ${PORT:6161}
+    

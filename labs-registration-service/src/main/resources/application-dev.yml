@@ -1,0 +1,43 @@
+logging:
+  level:
+    io.labs.registration: debug
+    
+spring: 
+  session:
+    store-type: redis
+  
+services: 
+  datasource: 
+    name: mariadb-labs
+    initial-size: 1
+    maximum-pool-size: 2
+    max-wait-time: 3000
+  redis: 
+    name: labs-redis
+  
+    
+mailing: 
+  from : labs@labs.io
+  to:
+    list: 
+    - limjh82@sk.com
+    - 1600078@partner.skcc.com
+    - sanghoonhan@sk.com
+    - tonite31@sk.com 
+    - blingeee@sk.com
+    - hunkee1017@sk.com 
+    - 1000jaeh@sk.com 
+  subject: Test 메일입니다.
+  text: Test 메일입니다.
+  
+hipchat-noti:   
+  color: green
+  message: Test 알림입니다.
+  notify: false
+  message_format: text
+  
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+  client:
+    registry-fetch-interval-seconds: 5

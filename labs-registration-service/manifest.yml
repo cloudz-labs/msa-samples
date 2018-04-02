@@ -1,0 +1,16 @@
+---
+applications:
+- name: labs-registration-service
+  memory: 1G
+  instances: 1
+  path: ./target/labs-registration-service-1.2.0-SNAPSHOT.jar
+  buildpack: java_buildpack
+  services:
+    - labs-discovery-service
+    - mariadb-labs
+    - labs-redis
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
+    SPRING_PROFILES_ACTIVE: dev
+   
+    

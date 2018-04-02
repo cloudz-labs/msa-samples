@@ -1,0 +1,16 @@
+eureka: 
+  client:
+    enabled: false
+    
+spring: 
+  data:
+    mongodb:
+      host: ${LABS_MONGO_SERVICE_HOST:labs-mongo}
+      port: ${LABS_MONGO_SERVICE_PORT:27017}
+      username: ${LABS_MONGO_USERNAME:datamgmt}
+      password: ${LABS_MONGO_PASSWORD:datamgmt}
+      database: ${LABS_MONGO_DBNAME:datamgmt}
+    
+file: 
+  save: 
+    dir: /test

@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    instance-id: localhost:${server.port}
+    hostname: localhost
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 15
+  client:
+    region: default
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+security:
+  basic:
+    enabled: false
+    

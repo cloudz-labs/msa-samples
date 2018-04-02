@@ -1,0 +1,10 @@
+---
+applications:
+- name: labs-hystrix-dashboard-service
+  memory: 512M
+  instances: 1
+  path: ./target/labs-hystrix-dashboard-service-1.0.0-SNAPSHOT.jar
+  random-route: true
+  buildpack: java_buildpack
+  env:
+    JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

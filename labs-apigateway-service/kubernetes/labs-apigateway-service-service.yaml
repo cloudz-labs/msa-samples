@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    service: labs-apigateway-service
+  name: labs-apigateway-service
+spec:
+  ports:
+  - name: "9999"
+    port: 9999
+    targetPort: 9999
+  selector:
+    pod: labs-apigateway-service
+  type: NodePort

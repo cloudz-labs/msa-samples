@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="registration">
+	
+	<select id="registration.selectRegistrationList" resultType="io.labs.registration.main.vo.Registration">
+		SELECT		id,
+					question_id,
+					email,
+					contents,
+					reg_date 
+		FROM		Registrations
+		ORDER BY	id		DESC
+	</select>
+	
+	<select id="registration.selectRegistration" parameterType="java.lang.Integer" resultType="io.labs.registration.main.vo.Registration">
+		SELECT	id,
+				question_id,
+				email,
+				contents,
+				reg_date 
+		FROM	Registrations
+		WHERE	id = #{id}
+	</select>
+	
+	<insert id="registration.insertRegistration">
+		INSERT 
+		INTO	Registrations (question_id, email, contents, reg_date)
+  		VALUES (#{questionId}, #{email}, #{contents}, curdate())
+	</insert>
+	
+	<select id="registration.selectCategoryOfRegistration" parameterType="java.lang.Integer" resultType="io.labs.registration.category.vo.Category">
+		SELECT	rq.category as id,
+				c.name,
+				c.description
+		FROM	Categories c
+		RIGHT OUTER JOIN (
+			SELECT	r.id,
+					q.category
+			FROM	Registrations r
+			INNER JOIN	Questions q
+			ON		r.question_id = q.id	
+		) rq
+		ON	c.id = rq.category
+		WHERE rq.id = #{id} 
+	</select>
+</mapper>

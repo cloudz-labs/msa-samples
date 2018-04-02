@@ -1,0 +1,16 @@
+server:
+  port: ${PORT:8093}
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
+  http:
+    multipart:
+      max-file-size: 10MB
+
+attachment: 
+  document: 
+    container: docs
+  preview:
+    container: previews

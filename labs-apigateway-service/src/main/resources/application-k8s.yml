@@ -1,0 +1,12 @@
+eureka:
+  client:
+    enabled: false
+
+ribbon:
+  eureka:
+    enabled: false
+
+labs-registration-service:
+  ribbon:
+    listOfServers: labs-registration-service:8090
+          

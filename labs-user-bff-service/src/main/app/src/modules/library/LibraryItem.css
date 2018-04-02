@@ -1,0 +1,80 @@
+/* .dt-library-item {
+	border: 1px solid #dddddd;
+	padding-bottom: 0.5em;
+}
+.dt-library-item .dt-library-item-property {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.dt-library-item .dt-library-item-links,
+.dt-library-item .dt-library-item-downloads {
+	display: inline-block;
+}
+.dt-library-item .dt-library-item-links .dt-library-item-property,
+.dt-library-item .dt-library-item-downloads .dt-library-item-property {
+	padding: 0;
+}
+.dt-library-item .dt-library-item-title  {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	border-bottom: 3px solid #dddddd;
+}
+.dt-library-item .dt-library-item-title h3 {
+	margin: 0;
+}
+.dt-library-item .dt-library-item-description{
+	white-space: pre-wrap;
+}
+.dt-library-item .dt-library-item-property.dt-library-item-resources {
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+}
+.dt-library-item .dt-library-item-property.dt-library-item-resources .dt-library-item-resources-container {
+	background-color: #f1f1f1;
+	display: inline-block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.5em;
+	border-radius: 3px;
+}
+.dt-library-item .dt-library-item-property .file-icon
+{
+	float: left;
+}
+.dt-library-item .dt-library-item-property .file-icon::before {
+	border-color: #f1f1f1 #f1f1f1 rgba(255,255,255,.35) rgba(255,255,255,.35);
+}
+
+.dt-library-item .dt-library-item-property .file-icon[data-type=link] {
+	background: #fff;
+}
+.dt-library-item .dt-library-item-property .file-icon[data-type=link]::before {
+	border-color: #f1f1f1 #f1f1f1 rgba(100,100,100,.35) rgba(100,100,100,.35);
+}
+.dt-library-item .dt-library-item-property .file-icon[data-type=link]::after {
+	color :  #0061BE;
+}
+
+.dt-library-item .dt-library-item-property .dt-library-item-link,
+.dt-library-item .dt-library-item-property .dt-library-item-download {
+	color: #888888;
+	cursor: pointer;
+	display: block;
+	padding-left: 0.3em;
+	padding-right: 0.4em;
+	padding-bottom: 0.5em;
+}
+.dt-library-item .dt-library-item-property .dt-library-item-link:last-child,
+.dt-library-item .dt-library-item-property .dt-library-item-download:last-child {
+	padding-bottom: 0;
+}
+.dt-library-item .dt-library-item-property .dt-library-item-link span,
+.dt-library-item .dt-library-item-property .dt-library-item-download span{
+	line-height: 32px;
+	padding-left: 0.2em;
+}
+.dt-library-item .dt-library-item-property .dt-library-item-link:hover,
+.dt-library-item .dt-library-item-property .dt-library-item-download:hover {
+	color: #000000;
+} */

@@ -1,0 +1,117 @@
+.course-list-item {
+	border: 1px solid #eee;
+	background-color: #fff;
+	margin: 20px 0;
+}
+
+.course-list-item .course-list-item-desc, .course-list-item .course-list-item-title
+	{
+	padding: 1em;
+	margin: 0;
+}
+
+.course-list-item .course-list-item-desc {
+	padding: 30px 30px;
+}
+
+.course-list-item .course-list-item-desc h3 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.course-list-item .course-list-item-desc h3:first-child {
+	margin-top: 0;
+}
+
+.course-list-item .course-list-item-desc img {
+	margin-top: 30px;
+	max-width: 100%;
+}
+
+.course-list-item .course-list-item-title {
+	font-size: 20px;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	background-color: #D04D6F;
+	color: #fff;
+}
+
+.course-list-item button {
+	display: block;
+	cursor: pointer;
+	margin: auto;
+	border: 1px solid #777;
+	border-radius: 4px;
+	font-weight: bold;
+	background-color: #fff;
+	color: #666;
+	padding: 5px 50px;
+	margin-bottom: 1em;
+	font-size: 16px;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+.course-list-item button:hover {
+	background: #666;
+	border: 1px solid #ccc;
+	color: #fff;
+}
+
+.course-list-item-desc li {
+	padding: 2px 0;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.course-list-items {
+	list-style: none;
+	padding: 0;
+}
+
+.course-container>p:first-child {
+	font-size: 1.17em;
+	font-weight: 700;
+}
+
+.course-description {
+	margin-top: 30px;
+	font-size: 18px;
+	color: #333;
+}
+
+.course-list-item-desc div>p {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 15px 25px;
+	border-radius: 4px;
+}
+
+.course-list-item-desc div>ul {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 15px 25px;
+	border-radius: 4px;
+}
+
+.course-list-item-desc li strong {
+	font-size: 18px;
+}
+
+/* .course-list-items
+{
+	list-style: none;
+	padding: 0;
+}
+
+.course-container > p:FIRST-CHILD {
+	font-size: 1.17em; font-weight: bold;
+}
+
+.course-description
+{
+	font-size: 18px; color: #333;
+} */

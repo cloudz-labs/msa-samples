@@ -1,0 +1,42 @@
+.labs-intro .labs-intro-content {
+	max-width: 640px;
+	margin: auto;
+	text-align: center;
+	word-break: keep-all;
+}
+.labs-intro .labs-intro-content-wide {
+	margin: auto;
+	text-align: center;
+	word-break: keep-all;
+}
+.labs-intro .labs-intro-technologies {
+	display: table;
+	width: 100%;
+}
+.labs-intro .labs-intro-technology-row {
+	display: table-row;
+}
+.labs-intro .labs-intro-technology {
+	display: table-cell;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.labs-intro .labs-intro-technology img {
+	width: 100%;
+	max-width: 150px;
+	height: auto;
+}
+.labs-intro .labs-intro-technology span {
+	display: block;
+	color: #f1731f;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+@media only screen and (max-width: 640px) {
+	.labs-intro .labs-intro-technology span {
+		font-size: 0.9em;
+	}
+	.labs-intro .labs-intro-technology img {
+		width: 90%;
+	}
+}
