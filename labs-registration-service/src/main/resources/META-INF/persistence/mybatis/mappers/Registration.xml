@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="registration">
 	
-	<select id="registration.selectRegistrationList" resultType="io.labs.registration.main.vo.Registration">
+	<select id="registration.selectRegistrationList" resultType="io.dtlabs.registration.main.vo.Registration">
 		SELECT		id,
 					question_id,
 					email,
@@ -12,7 +12,7 @@
 		ORDER BY	id		DESC
 	</select>
 	
-	<select id="registration.selectRegistration" parameterType="java.lang.Integer" resultType="io.labs.registration.main.vo.Registration">
+	<select id="registration.selectRegistration" parameterType="java.lang.Integer" resultType="io.dtlabs.registration.main.vo.Registration">
 		SELECT	id,
 				question_id,
 				email,
@@ -28,7 +28,7 @@
   		VALUES (#{questionId}, #{email}, #{contents}, curdate())
 	</insert>
 	
-	<select id="registration.selectCategoryOfRegistration" parameterType="java.lang.Integer" resultType="io.labs.registration.category.vo.Category">
+	<select id="registration.selectCategoryOfRegistration" parameterType="java.lang.Integer" resultType="io.dtlabs.registration.category.vo.Category">
 		SELECT	rq.category as id,
 				c.name,
 				c.description

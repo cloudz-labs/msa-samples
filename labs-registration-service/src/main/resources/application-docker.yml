@@ -1,0 +1,49 @@
+logging:
+  level:
+    io.dtlabs.registration: debug
+
+eureka:
+  instance:
+    instance-id: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    hostname: ${spring.application.name}
+    prefer-ip-address: true
+    ip-address: ${spring.application.name}
+    non-secure-port: ${server.port}
+    lease-renewal-interval-in-seconds: 15
+    lease-expiration-duration-in-seconds: 15
+  client:
+    region: default
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 30
+    service-url:
+      defaultZone: http://${application.username}:${application.password}@${DISCOVERY_NAME}:8761/eureka/
+
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:mariadb://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+    driver-class-name: org.mariadb.jdbc.Driver
+    initialize: false
+    hikari:
+      maximum-pool-size: 80
+      minimum-idle: 1 
+  session:
+    store-type: redis
+  redis: 
+    host: ${REDIS_HOST}
+    port: ${REDIS_PORT}  
+    password: ${REDIS_PASSWORD}
+
+hipchat-noti:
+  color: red
+  message: DTLABS 과정에 신청하셨습니다.
+  notify: true
+  message_format : text
+  url : ${hipchat-noti.url}
+
+management:
+  security:
+    enabled: false

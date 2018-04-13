@@ -4,4 +4,4 @@ server:
 
 api:
   connect:
-    path: http://labs1.cberry.xyz
+    path: http://dtlabs1.cberry.xyz

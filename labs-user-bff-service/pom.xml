@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.labs</groupId>
-	<artifactId>labs-user-bff-service</artifactId>
+	<artifactId>dtlabs-user-bff-service</artifactId>
 	<version>1.4.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>labs-user-bff-service</name>
-	<description>User-side Web Application for Labs</description>
+	<name>DTLabs User Application</name>
+	<description>User-side Web Application for DTLabs</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    deployment: dtlabs-registration-service
+  name: dtlabs-registration-service-deployment
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        pod: dtlabs-registration-service
+    spec:
+      containers:
+      - env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: k8s
+        envFrom:
+        - configMapRef:
+            name: dtlabs-cm  
+        image: dtlabs/dtlabs-registration-service
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "0.3"
+          requests:
+            cpu: "0.3"            
+        name: dtlabs-registration-service-container
+        ports:
+        - containerPort: 8090
+      restartPolicy: Always
+#      initContainers:
+#      - name: init-mariadb-dtlabs
+#        image: busybox
+#        command: ['sh', '-c', 'until nslookup mariadb-dtlabs; do date +"%T"; echo waiting for mariadb-dtlabs; sleep 2; done;']
+status: {}

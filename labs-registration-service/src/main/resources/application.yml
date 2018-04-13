@@ -1,9 +1,5 @@
 server:
   port: ${PORT:8090}
-
-spring:
-  application:
-    name: labs-registration-service
     
 mybatis:
   config-location: classpath:META-INF/persistence/mybatis/mybatis-config.xml
@@ -18,5 +14,4 @@ hystrix:
             
 ribbon:
   ConnectTimeout: 3000
-  ReadTimeout: 60000
-
+  ReadTimeout: 60000   

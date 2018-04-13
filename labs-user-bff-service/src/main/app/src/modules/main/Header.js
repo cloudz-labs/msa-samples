@@ -22,6 +22,7 @@ export default class Header extends React.Component {
 							<ul className="nav-bar">
 								<li><a href="/#course">Register</a></li>
 								<li><a href="/library">Library</a></li>
+								<li><a href="https://tech.cloudz-labs.io/">Blog</a></li>
 								<li><a href="/contact">Contact US</a></li>
 							</ul>
 						</div>

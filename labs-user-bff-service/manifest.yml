@@ -1,12 +1,12 @@
 ---
 applications:
-- name: labs-user-bff-service
+- name: dtlabs-user-bff-service
   memory: 512M
   disk_quota: 512M
-  path: target/labs-user-bff-service-1.4.0-SNAPSHOT.jar
+  path: target/dtlabs-user-bff-service-1.4.0-SNAPSHOT.jar
   buildpack: java_buildpack
   services:
-    - labs-apigateway-service
+    - dtlabs-apigateway-service
     - userbff_autoscaler
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

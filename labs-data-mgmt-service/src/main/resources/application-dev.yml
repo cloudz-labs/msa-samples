@@ -1,6 +1,6 @@
 logging:
   level:
-    io.labs.data.mgmt: debug
+    io.dtlabs.data.mgmt: debug
 
 eureka:
   instance:
@@ -10,10 +10,10 @@ eureka:
 
 services: 
   mongodb: 
-    name: labs-mongo
+    name: dtlabs-mongo
   objectstorage:
-    username: ${vcap.services.labs-object-storage.credentials.username}
-    password: ${vcap.services.labs-object-storage.credentials.password}
-    auth_url: ${vcap.services.labs-object-storage.credentials.auth_url}/tokens
-    tenantid: ${vcap.services.labs-object-storage.credentials.tenantId}
-    tenantname: ${vcap.services.labs-object-storage.credentials.tenantName}
+    username: ${vcap.services.dtlabs-object-storage.credentials.username}
+    password: ${vcap.services.dtlabs-object-storage.credentials.password}
+    auth_url: ${vcap.services.dtlabs-object-storage.credentials.auth_url}/tokens
+    tenantid: ${vcap.services.dtlabs-object-storage.credentials.tenantId}
+    tenantname: ${vcap.services.dtlabs-object-storage.credentials.tenantName}

@@ -18,7 +18,7 @@ function isNull(value) {
 // 	}
 // 	return 0;
 // }
-const localStorageKey = "labs-answers-object";
+const localStorageKey = "dtlabs-answers-object";
 
 export default class RegisterFormContainer extends React.Component {
 	constructor(props) {

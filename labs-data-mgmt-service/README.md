@@ -1,6 +1,6 @@
-# labs-data-mgmt-service
+# dtlabs-data-mgmt-service
 
-DT Labs 포털(`https://labs.skcc.com/`)에서 상단의 DT Library 메뉴에 대한 Backend API 서비스입니다.
+DT Labs 포털(`https://dtlabs.skcc.com/`)에서 상단의 DT Library 메뉴에 대한 Backend API 서비스입니다.
 
 카테고리별 자료 목록 조회, 자료 등록/수정/삭제, 자료 다운로드, 자료 검색 등의 기능을 제공합니다.
 
@@ -31,14 +31,14 @@ DT Labs 포털(`https://labs.skcc.com/`)에서 상단의 DT Library 메뉴에 �
 
 | 서비스 종류                                                 | 서비스 이름                                                 |
 | --------------------------- | --------------------------- |
-| Discovery Service           | labs-discovery-service    |
-| Mongo DB                    | labs-mongo    |
-| Object Storage              | labs-object-storage    |
+| Discovery Service           | dtlabs-discovery-service    |
+| Mongo DB                    | dtlabs-mongo    |
+| Object Storage              | dtlabs-object-storage    |
 
 
 ## Running locally
 
-> 로컬에서 정상적으로 구동되기 위해서 labs-discovery-service 앱이 구동되어 있어야 합니다.
+> 로컬에서 정상적으로 구동되기 위해서 dtlabs-discovery-service 앱이 구동되어 있어야 합니다.
 
 Mongo DB를 설치하고 필요한 경우 `src/main/resources/` 경로에 위치한 `application-default.yml` 설정 파일 내용을 변경합니다.
 ```yml
@@ -57,7 +57,7 @@ spring:
 mvn spring-boot:run
 ```
 
-앱이 정상적으로 구동되면 discovery server의 대시보드 페이지(`http://localhost:8761/eureka`)를 열어 `labs-data-mgmt-service` 이름의 앱이 추가되었는지 확인합니다.
+앱이 정상적으로 구동되면 discovery server의 대시보드 페이지(`http://localhost:8761/eureka`)를 열어 `dtlabs-data-mgmt-service` 이름의 앱이 추가되었는지 확인합니다.
 
 
 ## Building
@@ -74,7 +74,7 @@ mvn clean install -DskipTests=true
 cf push
 ```
 
-앱이 성공적으로 배포되면 PaaS 상에 구동되어 있는 discovery server의 대시보드 페이지(<labs-discovery-service 앱의 URL>/eureka)를 열어 `labs-data-mgmt-service` 이름의 앱이 추가되었는지 확인합니다.
+앱이 성공적으로 배포되면 PaaS 상에 구동되어 있는 discovery server의 대시보드 페이지(<dtlabs-discovery-service 앱의 URL>/eureka)를 열어 `dtlabs-data-mgmt-service` 이름의 앱이 추가되었는지 확인합니다.
 
 ## Documentation
 

@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    deployment: dtlabs-user-bff-service
+  name: dtlabs-user-bff-service-deployment
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        pod: dtlabs-user-bff-service
+    spec:
+      containers:
+      - env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: k8s
+        image: dtlabs/dtlabs-user-bff-service     
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "0.3"
+          requests:
+            cpu: "0.3"        
+        name: dtlabs-user-bff-service-container
+        ports:
+        - containerPort: 8031
+      restartPolicy: Always
+status: {}

@@ -1,6 +1,6 @@
 logging:
   level:
-    io.labs.registration: debug
+    io.dtlabs.registration: debug
     
 spring: 
   session:
@@ -8,16 +8,16 @@ spring:
   
 services: 
   datasource: 
-    name: mariadb-labs
+    name: mariadb-dtlabs
     initial-size: 1
     maximum-pool-size: 2
     max-wait-time: 3000
   redis: 
-    name: labs-redis
+    name: dtlabs-redis
   
     
 mailing: 
-  from : labs@labs.io
+  from : dtlabs@dtlabs.io
   to:
     list: 
     - limjh82@sk.com

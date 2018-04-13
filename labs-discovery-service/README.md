@@ -1,4 +1,4 @@
-# labs-discovery-service
+# dtlabs-discovery-service
 
 DT Labs 시스템을 구성하는 백엔드 서비스의 Discovery Server 기능을 담당하는 서비스입니다. 
 
@@ -49,18 +49,18 @@ mvn clean install -DskipTests=true
 cf push
 ```
 
-앱이 성공적으로 배포되면 discovery server의 대시보드 페이지(<labs-discovery-service 앱의 URL>)를 열어 화면이 정상적으로 출력되는지 확인합니다.
+앱이 성공적으로 배포되면 discovery server의 대시보드 페이지(<dtlabs-discovery-service 앱의 URL>)를 열어 화면이 정상적으로 출력되는지 확인합니다.
 
 ## 서비스화
 
-Discovery Server를 사용하는 클라이언트 앱을 위해 labs-discovery-service 앱의 URL을 user-provided-service로 제공합니다.
+Discovery Server를 사용하는 클라이언트 앱을 위해 dtlabs-discovery-service 앱의 URL을 user-provided-service로 제공합니다.
 
 user-provided-service로 생성하기 위해 커멘드라인에서 다음의 명령어를 실행합니다.
 ```sh
 //Linux/Mac
-cf cups labs-discovery-service -p '{"uri":"labs-discovery-service 앱의 URL"}'
+cf cups dtlabs-discovery-service -p '{"uri":"dtlabs-discovery-service 앱의 URL"}'
 
 //Window
-cf cups labs-discovery-service -p "{\"uri\":\"labs-discovery-service 앱의 URL\"}"
+cf cups dtlabs-discovery-service -p "{\"uri\":\"dtlabs-discovery-service 앱의 URL\"}"
 ```
 

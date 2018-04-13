@@ -1,0 +1,7 @@
+# will be Kubernetes container port
+server:
+  port: ${PORT:8031}
+
+api:
+  connect:
+    path: http://${APIGATEWAY_NAME}:9999

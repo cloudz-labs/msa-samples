@@ -5,11 +5,11 @@ eureka:
 spring: 
   data:
     mongodb:
-      host: ${LABS_MONGO_SERVICE_HOST:labs-mongo}
-      port: ${LABS_MONGO_SERVICE_PORT:27017}
-      username: ${LABS_MONGO_USERNAME:datamgmt}
-      password: ${LABS_MONGO_PASSWORD:datamgmt}
-      database: ${LABS_MONGO_DBNAME:datamgmt}
+      host: ${DTLABS_MONGO_SERVICE_HOST:dtlabs-mongo}
+      port: ${DTLABS_MONGO_SERVICE_PORT:27017}
+      username: ${DTLABS_MONGO_USERNAME:datamgmt}
+      password: ${DTLABS_MONGO_PASSWORD:datamgmt}
+      database: ${DTLABS_MONGO_DBNAME:datamgmt}
     
 file: 
   save: 

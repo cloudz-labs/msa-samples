@@ -4,15 +4,15 @@ spring:
 
 services: 
   datasource: 
-    name: mariadb-labs
+    name: mariadb-dtlabs
     initial-size: 1
     maximum-pool-size: 5
     max-wait-time: 3000
   redis: 
-    name: labs-redis
+    name: dtlabs-redis
     
 mailing: 
-  from : labs@labs.io
+  from : dtlabs@dtlabs.io
   to:
     list: 
     - limjh82@sk.com
@@ -22,12 +22,12 @@ mailing:
     - blingeee@sk.com
     - hunkee1017@sk.com 
     - 1000jaeh@sk.com 
-  subject: LABS 과정에 신청하셨습니다.
-  text: LABS 포털에서 확인해주세요.
+  subject: DTLABS 과정에 신청하셨습니다.
+  text: DTLABS 포털에서 확인해주세요.
 
 hipchat-noti:
   color: red
-  message: LABS 과정에 신청하셨습니다.
+  message: DTLABS 과정에 신청하셨습니다.
   notify: true
   message_format : text
   

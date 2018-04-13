@@ -1,9 +1,9 @@
-GET http://labs-apigateway-service-dev.paas.sk.com/registration-service/v1/categories
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/registration-service/v1/categories
 
 ###
 
-GET http://labs-apigateway-service-dev.paas.sk.com/registration-service/v1/questions/3
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/registration-service/v1/questions/3
 
 ###
 
-GET http://labs-apigateway-service-dev.paas.sk.com/registration-service/v1/questions/1
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/registration-service/v1/questions/1

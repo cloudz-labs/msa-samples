@@ -4,11 +4,11 @@ eureka:
     
 logging:
   level:
-    io.labs.registration: debug
+    io.dtlabs.registration: debug
      
 spring:
   datasource:
-    url: jdbc:mariadb://${MARIADB_LABS_SERVICE_HOST:mariadb-labs}:${MARIADB_LABS_SERVICE_PORT:3306}/${MYSQL_DATABASE:registration}
+    url: jdbc:mariadb://${MARIADB_DTLABS_SERVICE_HOST:mariadb-dtlabs}:${MARIADB_DTLABS_SERVICE_PORT:3306}/${MYSQL_DATABASE:registration}
     username: ${MYSQL_USER:registration}
     password: ${MYSQL_PASSWORD:registration}
     driver-class-name: org.mariadb.jdbc.Driver
@@ -19,7 +19,7 @@ spring:
       - org.springframework.boot.autoconfigure.session.SessionAutoConfiguration
       
 mailing: 
-  from : labs@labs.io
+  from : dtlabs@dtlabs.io
   to:
     list: 
     - limjh82@sk.com

@@ -1,0 +1,23 @@
+eureka:
+  instance:
+    instance-id: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    hostname: ${spring.application.name}
+    lease-renewal-interval-in-seconds: 15
+    lease-expiration-duration-in-seconds: 45
+  client:
+    region: default
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${spring.application.name}:${server.port}/eureka/
+
+security:
+  user:
+    name: ${application.username}
+    password: ${application.password}
+    role: ADMIN
+
+management:
+  security:
+    roles:
+    - ADMIN

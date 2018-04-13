@@ -1,15 +1,15 @@
 ---
 applications:
-- name: labs-data-mgmt-service
+- name: dtlabs-data-mgmt-service
   memory: 1G
   instances: 1
-  path: ./target/labs-data-mgmt-service-1.0.0-SNAPSHOT.jar
-  host: labs-data-mgmt-service
+  path: ./target/dtlabs-data-mgmt-service-1.0.0-SNAPSHOT.jar
+  host: dtlabs-data-mgmt-service
   buildpack: java_buildpack
   services:
-    - labs-discovery-service
-    - labs-mongo
-    - labs-object-storage
+    - dtlabs-discovery-service
+    - dtlabs-mongo
+    - dtlabs-object-storage
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom
     TZ: Asia/Seoul

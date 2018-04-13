@@ -1,12 +1,12 @@
 ---
 applications:
-- name: labs-turbine-service
+- name: dtlabs-turbine-service
   memory: 1G
   instances: 1
-  path: ./target/labs-turbine-service-1.0.0-SNAPSHOT.jar
+  path: ./target/dtlabs-turbine-service-1.0.0-SNAPSHOT.jar
   random-route: true
   buildpack: java_buildpack
   services:
-    - labs-discovery-service
+    - dtlabs-discovery-service
   env:
     JAVA_OPTS: -Djava.security.egd=file:///dev/urandom

@@ -9,4 +9,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: false
     service-url:
-      defaultZone: ${vcap.services.labs-discovery-service.credentials.uri}/eureka/
+      defaultZone: ${vcap.services.dtlabs-discovery-service.credentials.uri}/eureka/

@@ -3,18 +3,6 @@ info:
 
 server:
   port: ${PORT:9999}
-     
-zuul:
-  ignored-services: '*'
-#  ignored-patterns: 
-  routes:
-    labs-registration-service: 
-      path: /registration-service/**
-      service-id: labs-registration-service
-    labs-data-mgmt-service: 
-      path: /data-mgmt-service/**
-      service-id: labs-data-mgmt-service
-        
   
 hystrix: 
   command: 
@@ -28,3 +16,13 @@ ribbon:
   ConnectTimeout: 3000
   ReadTimeout: 60000
 
+zuul:
+  ignored-services: '*'
+#  ignored-patterns: 
+  routes:
+    labs-registration-service: 
+      path: /registration-service/**
+      service-id: labs-registration-service
+    labs-data-mgmt-service: 
+      path: /data-mgmt-service/**
+      service-id: labs-data-mgmt-service

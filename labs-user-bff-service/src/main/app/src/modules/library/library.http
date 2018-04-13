@@ -1,9 +1,9 @@
-GET http://labs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/docs
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/docs
 
 ###
 
-GET http://labs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/categories
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/categories
 
 ###
 
-GET http://labs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/categories/docs
+GET http://dtlabs-apigateway-service-dev.paas.sk.com/data-mgmt-service/v1/categories/docs

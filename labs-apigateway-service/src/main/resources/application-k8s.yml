@@ -6,7 +6,7 @@ ribbon:
   eureka:
     enabled: false
 
-labs-registration-service:
+dtlabs-registration-service:
   ribbon:
-    listOfServers: labs-registration-service:8090
+    listOfServers: dtlabs-registration-service:8090
           

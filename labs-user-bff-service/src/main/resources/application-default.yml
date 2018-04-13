@@ -1,3 +1,3 @@
 api:
   connect:
-    path: http://labs-apigateway-service.paas.sk.com
+    path: http://dtlabs-apigateway-service.paas.sk.com

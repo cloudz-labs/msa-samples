@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="question">
 
-	<select id="question.selectQuestion" resultType="io.labs.registration.question.vo.Question"
+	<select id="question.selectQuestion" resultType="io.dtlabs.registration.question.vo.Question"
 		parameterType="hashMap">
 		SELECT id, category, contents, version, reg_date AS date
 		FROM Questions

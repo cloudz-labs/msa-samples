@@ -1,17 +1,23 @@
 eureka:
   instance:
-    instance-id: localhost:${server.port}
-    hostname: localhost
-    lease-renewal-interval-in-seconds: 5
+    instance-id: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
+    hostname: localhost:${server.port}
+    prefer-ip-address: true
+    ip-address: localhost
+    non-secure-port: ${server.port}
+    lease-renewal-interval-in-seconds: 15
     lease-expiration-duration-in-seconds: 15
   client:
     region: default
     fetch-registry: false
     register-with-eureka: false
+    registry-fetch-interval-seconds: 30
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:8761/eureka/
 
 security:
   basic:
     enabled: false
-    
+management:
+  security:
+    enabled: false

@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations: {}
+  creationTimestamp: null
+  labels:
+    deployment: dtlabs-apigateway-service
+  name: dtlabs-apigateway-service-deployment
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        pod: dtlabs-apigateway-service
+    spec:
+      containers:
+      - env:
+        - name: SPRING_PROFILES_ACTIVE
+          value: k8s
+        image: dtlabs/dtlabs-apigateway-service
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            cpu: "0.5"
+          requests:
+            cpu: "0.4"               
+        name: dtlabs-apigateway-service-container
+        ports:
+        - containerPort: 9999
+      restartPolicy: Always
+status: {}
